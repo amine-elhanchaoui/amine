@@ -1,0 +1,23 @@
+body{
+    background: lightslategray;
+}
+
+
+
+
+.item{
+    text-align: center;
+}
+table{
+    margin: auto;
+    border-radius: 20px;
+}
+ul{
+    list-style: none;
+}
+th{
+    border: 0.5px black solid ;
+}
+td{
+    border: 0.5px black solid;
+}

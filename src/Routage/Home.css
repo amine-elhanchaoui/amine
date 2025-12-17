@@ -1,0 +1,34 @@
+body{
+    position: relative;
+}
+
+.me{
+    width: 20%;
+    height: auto;
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+
+}
+h2{
+    color: #007bff;
+    font-weight: bolder;
+}
+.pres{
+    font-size: 20px;
+    color: #333;
+    
+    margin-left: 25.1%;
+}
+.tech{
+    margin-top: 5%;
+    font-size: 18px;
+    color: #555;
+}
+span{
+    color: #007bff;
+    font-weight: bolder;
+    font-style: italic;
+    text-decoration: underline ;
+}

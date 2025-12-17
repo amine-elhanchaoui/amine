@@ -1,0 +1,10 @@
+.parent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.card{
+    width: 25%;
+    margin: 10px;
+}
