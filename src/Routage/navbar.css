@@ -1,6 +1,7 @@
 .animated-h1 {
-  display: inline-block;
   animation: realJump 1.2s cubic-bezier(.28,.84,.42,1) infinite;
+  margin: auto;
+  padding: 10px;
 }
 
 @keyframes realJump {

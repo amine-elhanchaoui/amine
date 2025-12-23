@@ -22,6 +22,7 @@ export default function Navbar() {
                 <NavLink to="/habits" style={navLinkStyles}>Habits Management</NavLink>
                 <NavLink to="/Products" style={navLinkStyles}>Products</NavLink>
                 <NavLink to="/Forms" style={navLinkStyles}>Form</NavLink>
+                <NavLink to="/Color-Picker" style={navLinkStyles}>Color Picker</NavLink>
             </div>
         </nav>
     );

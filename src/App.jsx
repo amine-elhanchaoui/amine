@@ -10,7 +10,8 @@ import Employee from './Projects/Forms/Employee.jsx'
 import Form from './Projects/Forms/Form.jsx'
 import dataCars from "./DATA/data.js"
 import Home from './Routage/Home.jsx'
-import './App.css'
+import Colorpicker from './Projects/Color Picker/Colorpicker.jsx'
+
 
 
 
@@ -31,6 +32,7 @@ function App() {
           <Route path='Form' element={<Form/>} />
           <Route path='Employee' element={<Employee/>} />
         </Route>
+        <Route path='/Color-Picker' element={<Colorpicker/>}></Route>
       </Routes>
     </BrowserRouter>
   )
