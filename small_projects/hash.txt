@@ -1,0 +1,2 @@
+Message: Hello, world!
+Hash: 25b4b31ce43966e388c86cdd127647ba96f473f1f70d7f666e15e201eed5823b

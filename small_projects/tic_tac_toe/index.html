@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe - Modern Edition</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="name-input-screen">
+        <div class="name-content">
+            <h2>Enter Player Names</h2>
+            <div class="name-inputs">
+                <div class="input-group">
+                    <label for="player-x">Player X Name:</label>
+                    <input type="text" id="player-x" placeholder="Enter name for X">
+                </div>
+                <div class="input-group">
+                    <label for="player-o">Player O Name:</label>
+                    <input type="text" id="player-o" placeholder="Enter name for O">
+                </div>
+            </div>
+            <button class="start-game-button">
+                <i class="fas fa-play"></i>
+                Start Game
+            </button>
+        </div>
+    </div>
+
+    <div class="container" style="display: none;">
+        <div class="game-header">
+            <h1>Tic Tac Toe</h1>
+            <div class="status">
+                <div class="player-turn">Player X's Turn</div>
+                <div class="score">
+                    <div class="player-score">Player X: 0</div>
+                    <div class="player-score">Player O: 0</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-board">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+
+        <div class="game-controls">
+            <button class="reset-button">
+                <i class="fas fa-sync"></i>
+                Reset Game
+            </button>
+            <button class="reset-score-button">
+                <i class="fas fa-trash"></i>
+                Reset Score
+            </button>
+        </div>
+    </div>
+
+    <div class="win-message">
+        <div class="win-content">
+            <h2>Player X Wins!</h2>
+            <button class="play-again-button">
+                <i class="fas fa-redo"></i>
+                Play Again
+            </button>
+        </div>
+    </div>
+
+    <div class="draw-message">
+        <div class="draw-content">
+            <h2>It's a Draw!</h2>
+            <button class="play-again-button">
+                <i class="fas fa-redo"></i>
+                Play Again
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

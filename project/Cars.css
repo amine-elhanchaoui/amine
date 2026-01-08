@@ -1,0 +1,43 @@
+
+*{
+    font-family:;
+    color: white;
+}
+
+html,body{
+    
+    background: url(carof_bg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    
+}
+html::-webkit-scrollbar {
+    display: none; 
+}
+
+.p1{
+    font-size: x-large;
+    margin: 10px;
+    padding: 10px;
+}
+div{
+    margin-bottom: 300px;
+    display: block;
+}
+img{
+    width: 480;
+    height: 640;
+    border-radius: 10px;
+}
+.Mercedes{
+    float: right;
+}
+.bmw{
+    float: left;
+}
+.rs6{
+    float: right;
+}

@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    
+    background: url(white-sand-beach-2252020.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+     -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+}
+html::-webkit-scrollbar {
+    display: none;  /* WebKit browsers */
+}
+     
+body{
+    font-family:monospace;
+    position: relative;
+    background: transparent;
+}
+
+h1{
+    font-size: 70px;
+    font-weight: 700;
+}
+h4{
+    color: white;
+    margin-left: 20px;
+}
+h3{
+    padding: 15px;
+    border-bottom: 3px solid white;
+    margin: 0 10px;
+
+   
+}
+pre{
+    font-size: large;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: rgb(201, 200, 200);
+}
+h3:hover{
+    border-bottom: 0;
+}
+.container_p{
+ position: absolute;
+ left: 25%;
+}
+.container_child1, .container_child2{
+    display: flex; 
+}
+.items{
+    margin:25px ;
+}
+
+img {
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 4px 7px 7px 0px rgba(177, 168, 168, 0.4);
+}
+img:hover{
+    transform: scale(0.99);
+}
+.container_child2>.items{
+    justify-content: center;
+    margin: auto;
+}
+span{
+    position: relative;
+}
+p{
+    position: absolute;
+    top: 50%;
+    bottom:25%;
+    left:35%;
+    color: white;
+    font-size: 40px;
+}
+.container_child2>span>p{
+    left: 26%;
+}
+

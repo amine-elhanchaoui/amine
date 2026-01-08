@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        html,body{
+            background: linear-gradient(to top right,#3436b1,
+            #08c4fc) no-repeat;
+            height: 100%;
+        }
+        form>div>*{
+            margin: 0 10px;
+            width: 30%;
+        }
+        form>div{
+            margin: 15px;
+            justify-content: center;
+            align-items: center;
+        }
+        #container{
+            border-top-left-radius: 150px;
+            border-bottom-left-radius: 150px;
+        }
+        #rocket{
+            margin: 0 20px 250px;
+        }
+    </style>
+</head>
+<body class="container-fluid">
+    <div class="d-flex h-100 align-items-center justify-content-end" >
+        <div id="welcome" class="w-25 d-inline">
+            <div id="rocket" >
+                <div class="d-flex justify-content-center align-items-start">
+                    <img class="text-light w-25 " src="pngwing.com.png" >
+                 </div>
+                 <h2 class="text-light text-center">Welcome</h2>
+                 <p class="h4 text-light text-center">You are 30 seconds away from earninig your own money!</p>
+            </div>
+            <button class="btn btn-light w-50 justify-content-center d-flex m-auto"><span class="h5"> Login</span></button>
+        </div>
+        <div id="container" class="bg-light w-75 m-5 p-5">
+            <h1 class="text-center text-secondary">Apply As Employee</h1>
+            <form id="from" class="form-group h-50  align-items-center m-5">
+                <div class="row d-flex">
+                    <input type="text" class="col form-control" placeholder="First-name">
+                    <input type="email" name="mail" class="col form-control"  placeholder="Enter your email">
+                </div>
+                <div class="row d-flex">
+                    <input type="text" class="col form-control" placeholder="Last-name">
+                    <input type="tel" class="col form-control" placeholder="Your phone">
+                </div>
+                <div class="row d-flex">
+                    <input type="password" class="col form-control" placeholder="Password">
+                    <select name="question" class="col select-control" aria-placeholder="Please select your question">
+                        <option value="value1">A</option>
+                        <option value="value2">B</option>
+                        <option value="value3">C</option>
+                    </select>
+                </div>
+                <div class="row d-flex">
+                    <input type="password" placeholder="Confirme your password" class="col form-control">
+                    <input type="text" name="answer" placeholder="Enter your Answer" class="col form-control">
+                </div>
+                <div>
+                    <input type="radio" name="male" class="form-check-input">
+                    <label for="male" class="form-check-label">Male</label>
+                    <input type="radio" name="female" class="form-check-input">
+                    <label for="female" class="form-check-label">Female</label>
+                </div>
+                <div class="row m-5">
+                    <button class="btn btn-primary w-25 rounded-pill float-end">Register</button>
+                </div>
+                <div class="form-check form-switch">
+                    <input type="checkbox" class="form-check-input" name="" id="">
+                    <label for="" class="form-check-label">Dark mode</label>
+                </div>
+    
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

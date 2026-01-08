@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anime Fighter</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #1a1a1a;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        #game-container {
+            display: none;
+            width: 100vw;
+            height: 100vh;
+        }
+        #character-select {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(45deg, #1a1a1a, #2a2a2a);
+        }
+        .character-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            cursor: pointer;
+            transition: transform 0.2s;
+            width: 200px;
+            text-align: center;
+        }
+        .character-card:hover {
+            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .character-card img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        #game-canvas {
+            width: 100%;
+            height: 100%;
+        }
+        #hud {
+            position: absolute;
+            top: 20px;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            pointer-events: none;
+        }
+        .health-bar {
+            width: 200px;
+            height: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border: 2px solid white;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .health-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #ff0000, #ff6b6b);
+            transition: width 0.3s;
+        }
+        #controls {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            gap: 10px;
+        }
+        .key {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+        #waiting-message {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="character-select">
+        <h1>Select Your Character</h1>
+        <div style="display: flex; gap: 20px;">
+            <div class="character-card" data-character="naruto">
+                <img src="https://i.imgur.com/example1.jpg" alt="Naruto">
+                <h2>Naruto Uzumaki</h2>
+                <p>Ninja of the Hidden Leaf</p>
+            </div>
+            <div class="character-card" data-character="goku">
+                <img src="https://i.imgur.com/example2.jpg" alt="Goku">
+                <h2>Goku</h2>
+                <p>Saiyan Warrior</p>
+            </div>
+            <div class="character-card" data-character="luffy">
+                <img src="https://i.imgur.com/example3.jpg" alt="Luffy">
+                <h2>Monkey D. Luffy</h2>
+                <p>Pirate King</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="game-container">
+        <canvas id="game-canvas"></canvas>
+        <div id="hud">
+            <div class="health-bar">
+                <div class="health-fill" id="player1-health"></div>
+            </div>
+            <div class="health-bar">
+                <div class="health-fill" id="player2-health"></div>
+            </div>
+        </div>
+        <div id="controls">
+            <div class="key">A/D</div>
+            <div class="key">Move</div>
+            <div class="key">J</div>
+            <div class="key">Light Attack</div>
+            <div class="key">K</div>
+            <div class="key">Heavy Attack</div>
+            <div class="key">L</div>
+            <div class="key">Special</div>
+        </div>
+    </div>
+
+    <div id="waiting-message">
+        <h2>Waiting for Opponent...</h2>
+        <p>Please wait while we find someone to fight!</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script src="game_client.js"></script>
+</body>
+</html> 

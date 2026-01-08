@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimeStream - Watch Anime & Read Manga</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo animate__animated animate__fadeIn">
+            <h1>AnimeStream</h1>
+        </div>
+        <div class="nav-links">
+            <a href="#" class="active">Home</a>
+            <a href="#">Anime</a>
+            <a href="#">Manga</a>
+            <a href="#">Schedule</a>
+            <a href="#">Favorites</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search anime or manga...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content animate__animated animate__fadeIn">
+            <h1>Welcome to AnimeStream</h1>
+            <p>Your ultimate destination for anime and manga</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="trending-anime">
+            <h2 class="section-title">Trending Now</h2>
+            <div class="anime-grid">
+                <div class="anime-card">
+                    <div class="anime-image">
+                        <img src="https://via.placeholder.com/300x400" alt="Anime 1">
+                        <div class="overlay">
+                            <button class="play-btn"><i class="fas fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="anime-info">
+                        <h3>Attack on Titan</h3>
+                        <p>Action, Drama, Fantasy</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <span>9.0</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- More anime cards will be added dynamically -->
+            </div>
+        </section>
+
+        <section class="latest-manga">
+            <h2 class="section-title">Latest Manga</h2>
+            <div class="manga-grid">
+                <div class="manga-card">
+                    <div class="manga-image">
+                        <img src="https://via.placeholder.com/200x300" alt="Manga 1">
+                        <div class="overlay">
+                            <button class="read-btn"><i class="fas fa-book-open"></i></button>
+                        </div>
+                    </div>
+                    <div class="manga-info">
+                        <h3>One Piece</h3>
+                        <p>Action, Adventure, Comedy</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <span>9.5</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- More manga cards will be added dynamically -->
+            </div>
+        </section>
+
+        <section class="schedule">
+            <h2 class="section-title">Weekly Schedule</h2>
+            <div class="schedule-grid">
+                <!-- Schedule will be populated dynamically -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>AnimeStream is your go-to platform for watching anime and reading manga.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Anime</a></li>
+                    <li><a href="#">Manga</a></li>
+                    <li><a href="#">Schedule</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 AnimeStream. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 

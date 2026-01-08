@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.embeddedhtml": "html",
+        "xstring": "cpp",
+        "iosfwd": "cpp",
+        "locale": "cpp"
+    }
+}
