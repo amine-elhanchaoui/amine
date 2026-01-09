@@ -12,6 +12,11 @@ import dataCars from "./DATA/data.js"
 import Home from './Routage/Home.jsx'
 import Colorpicker from './Projects/Color Picker/Colorpicker.jsx'
 
+// Client pages
+import ListClient from './Clients/ListClient'
+import AjouterClient from './Clients/AjouterClient'
+import RechercheClient from './Clients/RechercheClient'
+
 
 
 
@@ -33,6 +38,11 @@ function App() {
           <Route path='Employee' element={<Employee/>} />
         </Route>
         <Route path='/Color-Picker' element={<Colorpicker/>}></Route>
+
+        {/* Client management routes */}
+        <Route path='/listclient' element={<ListClient/>} />
+        <Route path='/ajouterclient' element={<AjouterClient/>} />
+        <Route path='/rechercheclient' element={<RechercheClient/>} />
       </Routes>
     </BrowserRouter>
   )

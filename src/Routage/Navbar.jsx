@@ -23,6 +23,9 @@ export default function Navbar() {
                 <NavLink to="/Products" style={navLinkStyles}>Products</NavLink>
                 <NavLink to="/Forms" style={navLinkStyles}>Form</NavLink>
                 <NavLink to="/Color-Picker" style={navLinkStyles}>Color Picker</NavLink>
+                <NavLink to="/listclient" style={navLinkStyles}>List Clients</NavLink>
+                <NavLink to="/ajouterclient" style={navLinkStyles}>Ajouter Client</NavLink>
+                <NavLink to="/rechercheclient" style={navLinkStyles}>Recherche Client</NavLink>
             </div>
         </nav>
     );
